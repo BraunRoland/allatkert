@@ -1,4 +1,5 @@
 import './App.css'
+import { Bevezeto } from './components/Bevezeto'
 import { Footer, Header } from './components/Header_footer'
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
     <>
       <div className="container">
         <Header/>
+        <Bevezeto/>
       </div>
       <Footer/>
     </>
