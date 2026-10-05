@@ -1,7 +1,9 @@
 import './App.css'
 import { Bevezeto } from './components/Bevezeto'
+import { Card } from './components/Card'
 import { Footer, Header } from './components/Header_footer'
 import { TablazatProps } from './components/Tablazat'
+import { cardData } from './data/allatok'
 
 function App() {
   return (
@@ -10,7 +12,18 @@ function App() {
         <Header/>
         <Bevezeto/>
         <TablazatProps/>
-        
+        <div className="row mb-1">
+          {cardData.map((card) => (
+            <Card
+              name = {card.name}
+              age = {card.age}
+              weight = {card.weight}
+              type = {card.type}
+              endangered = {card.endangered}
+              food = {card.food}
+            />
+          ))}
+        </div>
       </div>
       <Footer/>
     </>

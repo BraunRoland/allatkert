@@ -1,4 +1,4 @@
-import { tablazatData } from "../data/tablazat";
+import { tablazatData } from "../data/allatok";
 
 
 export function TablazatProps() {
