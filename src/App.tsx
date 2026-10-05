@@ -1,6 +1,7 @@
 import './App.css'
 import { Bevezeto } from './components/Bevezeto'
 import { Card } from './components/Card'
+import { Fontos } from './components/Fontos'
 import { Footer, Header } from './components/Header_footer'
 import { TablazatProps } from './components/Tablazat'
 import { cardData } from './data/allatok'
@@ -24,6 +25,7 @@ function App() {
             />
           ))}
         </div>
+        <Fontos/>
       </div>
       <Footer/>
     </>
