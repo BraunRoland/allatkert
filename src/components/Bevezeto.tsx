@@ -1,4 +1,4 @@
-import { BevezetoData } from "../data/Bevezto"
+import { BevezetoData } from "../data/bevezeto"
 
 export function Bevezeto() {
     return (
