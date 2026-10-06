@@ -11,7 +11,10 @@ export function Bevezeto() {
                 </div>
 
                 <div className="card-body">
-                    {BevezetoData.map((b: string) => (
+                    {BevezetoData.map((b: string,i) => (
+                        i==BevezetoData.length-1?                       
+                        <p className="mb-0">{b}</p>
+                        :
                         <p>{b}</p>
                     ))}
                 </div>

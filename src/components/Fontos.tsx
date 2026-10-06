@@ -10,7 +10,10 @@ export function Fontos() {
 
                         <div className="card-body">
                             <ul>
-                                {fontosData.map((sor) => (
+                                {fontosData.map((sor,i) => (
+                                    i==fontosData.length-1?
+                                    <li className="mb-0">{sor}</li>
+                                    :
                                     <li>{sor}</li>
                                 ))}
                             </ul>
